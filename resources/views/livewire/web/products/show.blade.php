@@ -1,4 +1,3 @@
-<div>
 @section('title')
 {{ $product->title }} - Eat Your Favorite Foods
 @stop
@@ -92,7 +91,8 @@ Food Store, Eat Your Favorite Foods
             </div>
 
             <!-- button add to cart -->
+            <livewire:web.cart.btn-add-to-cart-full :product_id="$product->id" />
 
         </div>
     </div>
-</div></div>
+</div>
