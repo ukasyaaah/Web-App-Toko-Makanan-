@@ -40,3 +40,6 @@ Route::get('/category/{slug}', Web\Category\Show::class)->name('web.category.sho
 
 //route product show
 Route::get('/products/{slug}', Web\Products\Show::class)->name('web.product.show');
+
+//route cart
+Route::get('/cart', Web\Cart\Index::class)->name('web.cart.index')->middleware('auth:customer');
